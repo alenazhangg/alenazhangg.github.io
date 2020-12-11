@@ -687,6 +687,7 @@ header {
 .footer-title{
   margin-bottom: 2em;
   color: rgba(246,224,181, 0.8);
+  font-size: 150%;
 }
 .footer a {
   color: inherit;
