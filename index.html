@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Alena Zhang</title>
+
+
+      <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+      <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;700&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;400;600&display=swap"
+      rel="stylesheet">
+      <link rel="icon" href="http://example.com/favicon.png">
+      <link rel="stylesheet" href="css/style.css">
+
+      <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+      <link rel="manifest" href="/site.webmanifest">
+    </head>
+
+    <body onload="load()">
+      <!--Navigation Bar -->
+      <header id="hideme header">
+        <div id="mySidebar" class="sidebar">
+          <ul class="sidebar-list">
+            <li class="sidebar-item"><a href="javascript:void(0)" class="sidebar-closebtn"
+            onclick="closeNav()">&times;</a></li>
+            <li class="sidebar-item"><a href="#home" class="sidebar-link">About Me</a></li>
+            <li class="sidebar-item"><a href="#experiences" class="sidebar-link">Work Experiences</a></li>
+            <li class="sidebar-item"><a href="#projects" class="sidebar-link">Projects</a></li>
+            <li class="sidebar-item"><a href="#activities" class="sidebar-link">Activities</a></li>
+          </ul>
+        </div>
+
+        <div id="sidebar-toggle">
+          <button class="sidebar-openbtn" onclick="openNav()">&#9776;</button>
+        </div>
+        <ul id="header-items" class="header-social-list">
+          <li class="social-list-item">
+            <a class="resume" href="img\Resume-Alena Zhang.pdf" target="_blank">Resume</a>
+          </li>
+          <li class="social-list-item">
+            <a class="social-list-link" href="mailto:alena.zhang@duke.edu">
+            <i class="fas fa-envelope"></i></a>
+          </li>
+          <li class="social-list-item">
+            <a class="social-list-link"
+            href="https://www.linkedin.com/in/alena-zhang-4449b6198/" target="_blank">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+          <li class="social-list-item">
+            <a class="social-list-link"
+            href="https://www.facebook.com/alena.zhang.712/" target="_blank">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+          <li class="social-list-item">
+            <a class="social-list-link"
+            href="https://github.com/alenazhangg" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+          </li>
+        </ul>
+      </header>
+      <!-- Introduction -->
+      <section class="intro" id="home">
+          <h1 id="intro-title" class="section-title section-title-intro">
+            Hi! I'm <span color="rgb(246,224,181)"><strong>Alena Zhang</strong></span>
+          </h1>
+          <p id="intro-subtitle" class="section-subtitle section-subtitle-intro">
+            CS & Economics Major
+          </p>
+          <img src="img/alena-zhang-1.JPG" alt="a picture of Alena Zhang" id="intro-image" class="intro-img">
+      </section>
+
+      <!-- About Me -->
+      <section class="about-me" id="about">
+        <div id="about-me-content" class="about-me-content">
+          <h2 id="about-me-title" class="section-title section-title-about">About Me</h2>
+          <p id="about-me-subtitle" class="hideme section-subtitle section-subtitle-about">Freshman at Duke University</p>
+
+          <div id="about-me-body" class="hideme about-me-body">
+            <p>Hi! My name is Alena, and I am a first year student at Duke University
+            pursuing a Bachelor of Science in <strong>Computer Science</strong> and <strong>Economics</strong>.
+            Within the tech industry, I am excited to explore careers in <strong>software engineering</strong>
+            and <strong>data science</strong>. I am also interested in learning more about
+            <strong>financial technology</strong> and <strong>artificial intelligence</strong>.
+            </p>
+            <p>As a senior in high school, I interned at <strong>NASA</strong> as a part of the SEES
+              program. At the internship, I worked collaboratively in a team of 3 to write
+              code that could process and analyze satellite data.</p>
+            <p>At Duke, I am a <strong>Duke SPIRE (STEM Pathways for Inclusion, Readiness, and Excellence)
+            Fellow</strong>. Additionally, I am involved in BOW (Business-Oriented Women), Women in Tech, DTech, ASA (Asian
+            Student Association), and DURS (Duke Undergraduate Research Society). I have
+            also attended hackathons, including HackDuke, HackNC, and Technica, and I am
+            excited to participate in more!</p>
+            <p>As for my other hobbies and interests, I love to play card games, paint, and
+              practice flute. I'm also a huge foodie! My favorite things to bake are souffles,
+              custard pudding, and egg tarts :)
+            </p>
+          </div>
+
+          <div class="about-me-skills">
+              <p class="hideme programming-header">Programming Skills</p>
+              <ul class="programming-skills">
+                <ul class="prg-languages">
+                  <li class="hideme skill">Java</li>
+                  <li class="hideme skill">Python</li>
+                  <li class="hideme skill">C</li>
+                  <li class="hideme skill">HTML/CSS</li>
+                  <li class="hideme skill">JavaScript</li>
+                  <li class="hideme skill">R</li>
+                  <li class="hideme skill">Dart</li>
+                </ul>
+                <ul class="hideme git">
+                  <li class="skill">Git/GitHub</li>
+                </ul>
+            </ul>
+              <p class="hideme cw-header">Relevant Coursework</p>
+              <ul class="cw">
+                <li class="hideme skill">Data Structure and Algorithms</li>
+                <li class="hideme skill">Computer Architecture</li>
+                <li class="hideme skill">Discrete Math for CS</li>
+                <li class="hideme skill">Intermediate Microeconomics</li>
+              </ul>
+              <p class="hideme fe-header">Further Education: Coursera</p>
+              <ul class="fe">
+                <li class="hideme skill">Intro to Programming in C</li>
+                <li class="hideme skill">Google Cloud Platform Fundamentals: Core Infrastructure</li>
+                <li class="hideme skill">Data Science: Foundations using R</li>
+              </ul>
+              <p class="hideme skills-header">Languages</p>
+              <ul class="skills">
+                <li class="hideme skill">Chinese</li>
+                <li class="hideme skill">French</li>
+              </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Work Experiences -->
+      <section class="work-experiences" id="experiences">
+        <h2 id="experience-title" class="hideme section-title section-title-experiences">Work Experiences</h2>
+        <div id="exp-list" class="exp-list">
+          <button type="button" class="hideme exp-collapsibleBtn">NASA STEM Enhancement in Earth
+          Science</button>
+          <div class="exp-content">
+            <ul class="position-date-info">
+              <li class="position">Intern</li>
+              <li class="date">7/2019</li>
+            </ul>
+            <div class="github-link"><a class="social-list-link2"
+            href="https://github.com/alenazhangg/nasa-sees" target="_blank">
+            <i class="fab fa-github"></i></div>
+            </a>
+            <ul class="work-description1">
+              <li>Selected as 1 of 54 interns out of over 600 applicants</li>
+              <li>Worked closely with a team of 5 to analyze ground track data for
+                the GRACE satellite, which measures changes in mass over regions of
+                Earth</li>
+              <ul><li>Generated plots of satellite data using <span style="color: rgb(246,224,181)">Python's Matplotlib</span>
+                and <span style="color: rgb(246,224,181)">NumPy</span> library for 24 locations that experienced natural disasters</li></ul>
+              <ul><li>Identified gaps in data to determine important time frames during
+                the natural disater that the GRACE satellite was unable to capture</li></ul>
+              <li>Formulated solutions to improve the satellite's ability to assess the impact
+                of natural disasters and inform of possible response measures in a timely manner</li>
+              <li>Showcased the effectiveness and feasibility of a solution involving a satellite constellation
+                to NASA scientists in a 30-minute presentation</li>
+            </ul>
+          </div>
+          <button type="button" class="hideme exp-collapsibleBtn">The Love of China School of Dance</button>
+          <div class="exp-content">
+            <ul class="position-date-info">
+              <li class="position">Teaching Assistant</li>
+              <li class="date">8/2018-5/2020</li>
+            </ul>
+            <ul class="work-description">
+              <li>Assisted the teacher in instructing weekly 1.5 hour lessons for a class of
+                around 15 5th and 6th graders</li>
+              <li>Led stretches for the first 30 minutes of class</li>
+              <li>Clarified any confusion in technique or posture and worked
+                individually with each dancer in the class to polish and correct
+                 dance moves</li>
+              <li>Taught and demonstrated simple dance moves and exercises to the class</li>
+            </ul>
+          </div>
+          <button type="button" class="hideme exp-collapsibleBtn">Austin Chinese-American
+          Network - SIW</button>
+          <div class="exp-content">
+            <ul class="position-date-info">
+              <li class="position">Summer in Weishan English Teacher</li>
+              <li class="date">6/2018, 6/2019</li>
+            </ul>
+            <ul class="work-description">
+              <li>Selected as 1 of 10 high schoolers to teach English at a local
+                 high school in southern China</li>
+              <li>Planned and taught lessons related to American food, culture,
+                and daily life to 2 classes of 50 students for 2 weeks every summer</li>
+              <li>Clarified any confusion in technique or posture and worked
+                individually with each dancer in the class to polish and correct
+                 dance moves</li>
+              <li>Coordinated with the English teachers at the local Chinese
+                high school to formalize lesson plans and ensure that all needed
+                materials were available </li>
+            </ul>
+          </div>
+          <button type="button" class="hideme exp-collapsibleBtn">Terrarium Apparel</button>
+          <div class="exp-content">
+            <ul class="position-date-info">
+              <li class="position">Co-Founder</li>
+              <li class="date">8/2019-5/2020</li>
+            </ul>
+            <ul class="work-description">
+              <li>Established an initiative to spread awareness on and raise
+              funds for marginalized endangered species</li>
+              <li>Designed T-shirts and hats showcasing endangered animals that
+                are often associated with a negative connotation in popular culture
+                in an effort to shed a more positive light on them</li>
+              <li>Sold apparel to our community and managed over $1500 in revenue after
+             2 weeks of sales</li>
+              <li>Donated around $750 in profit within the first 2 weeks to varied wildlife organizations
+                advocating for the conservation and preservation of the marginalized
+                endangered species</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!--Projects-->
+
+      <section class="my-projects" id="projects">
+
+        <div id="prj-table" class="hideme prj-table">
+          <div class="prj-tabs">
+            <div class="prj-tab" onclick="toggleSelected(0)">
+              <p>NASA SEES</p>
+            </div>
+            <div class="prj-tab" onclick="toggleSelected(1)">
+              <p>Huffman Coding</p>
+            </div>
+            <div class="prj-tab" onclick="toggleSelected(2)">
+              <p>Percolation</p>
+            </div>
+            <div class="prj-tab" onclick="toggleSelected(3)">
+              <p>Due Calculator</p>
+            </div>
+            <div class="prj-tab" onclick="toggleSelected(4)">
+              <p>Unit Converter</p>
+            </div>
+            <div class="prj-tab" onclick="toggleSelected(5)">
+              <p>Blockchain<br>Research</p>
+            </div>
+          </div>
+
+          <div class="prj-tab-content">
+            <div class="prj-tab-item">
+              <h3 class="prj-title">'Weighing Water' Team Project</h3>
+              <ul class="prj-description-content">
+                <li>Used real data from climate models to investigate the
+                gravitational anomalies of 24 specified regions around the world
+                that the GRACE (Gravity Recovery and Climate Experiment) satellite
+                was unable to capture</li>
+                <ul>
+                  <li>Created plots of climate data for 24 regions
+                  with the <span style="color: rgb(246,224,181)">Matplotlib</span> and
+                  <span style="color: rgb(246,224,181)">NumPy</span> libraries of
+                  <span style="color: rgb(246,224,181)">Python</span>.</li>
+                  <li>Determined when GRACE visited each region and plotted times on
+                     climate graphs</li>
+                </ul>
+                <li>Formulated a potential solution involving a satellite constellation
+                  to improve the satellite's ability to assess the impact
+                  of natural disasters</li>
+              </ul>
+
+              <a class="social-list-link prj-github"
+              href="https://github.com/alenazhangg/nasa-sees" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+            </div>
+
+            <div class="prj-tab-item">
+              <h3 class="prj-title">Data Structures and Algorithms Class Project</h3>
+              <ul class="prj-description-content">
+                <li>Programmed in <span style="color: rgb(246,224,181)">Java</span>
+                   with a partner to implement Huffman coding algorithms
+                  for compression and decompression of text and image files</li>
+                <ul>
+                  <li>Determined encodings for each byte of input data by creating
+                  a Huffman tree based on the frequency of each byte</li>
+                  <li>Compressed the files by writing the corresponding encoding
+                    for each byte and writing the Huffman tree at the beginning of
+                  the compressed file</li>
+                  <li>Decompressed files based on the encodings stored in Huffman
+                    tree</li>
+                </ul>
+              </ul>
+
+              <a class="social-list-link prj-github"
+              href="https://coursework.cs.duke.edu/yuanyuan.lin/p7-huffman-fall20" target="_blank">
+              <i class="fab fa-gitlab"></i>
+              </a>
+            </div>
+            <div class="prj-tab-item">
+              <h3 class="prj-title">Data Structures and Algorithms Class Project</h3>
+              <ul class="prj-description-content">
+                <li>Programmed in <span style="color: rgb(246,224,181)">Java</span>
+                   to create a Monte Carlo simulation to
+                estimate the value of a percolation threshold in a random system</li>
+                <ul>
+                  <li>Modeled a percolation system using an NxN grid of sites, where
+                  each site is either open or blocked</li>
+                  <li>Full sites are open sites that can be connected to an open
+                  site at the top of the grid, and the system is said to percolate
+                  if there is a full site in the bottom row</li>
+                </ul>
+                <li>Implemented breadth-first-search, depth-first-search, and
+                union-find to determine when a system percolates</li>
+                <li>Estimated the percolation threshold to be around 0.593 for a
+                NxN grid by running simulations</li>
+              </ul>
+
+              <a class="social-list-link prj-github"
+              href="https://coursework.cs.duke.edu/alena.zhang/P6-Percolation" target="_blank">
+              <i class="fab fa-gitlab"></i>
+              </a>
+            </div>
+
+
+
+            <div class="prj-tab-item">
+              <h3 class="prj-title">Electric Cooperative Membership Due Calculator</h3>
+              <ul class="prj-description-content">
+                <li>Programmed in <span style="color: rgb(246,224,181)">Java</span>
+                   and <span style="color: rgb(246,224,181)">JavaFX</span>
+                    to create a desktop application
+                that calculates yearly membership dues for members of an electric
+                cooperative</li>
+                <li>Designed algorithms to calculate dues based on each member's
+                annual number of electric meters served, profit, and member status</li>
+                <li>Built an interface that allows users to search through past due
+                  calculations and create yearly invoices to send to members</li>
+              </ul>
+
+              <a class="social-list-link prj-github"
+              href="https://github.com/alenazhangg/due-calculator" target="_blank">
+              <i class="fab fa-github"></i>
+              </a>
+            </div>
+
+            <div class="prj-tab-item">
+              <h3 class="prj-title">Native Mobile App</h3>
+              <ul class="prj-description-content">
+                <li>Programmed in <span style="color: rgb(246,224,181)">Dart</span>
+                   to build a <span style="color: rgb(246,224,181)">Flutter</span> app
+                   compatible with iOS and Andriod that converts units in 8 categories</li>
+                <ul>
+                  <li><strong>Categories</strong>: length, area, volume, mass, time, digital storage,
+                   energy, and currency</li>
+                </ul>
+                <li>Designed an interactive user interface, created stateful widgets,
+                and retrieved API data with guidance from Udacity helper code</li>
+              </ul>
+              <a class="social-list-link prj-github"
+              href="https://github.com/alenazhangg/unit-converter" target="_blank">
+              <i class="fab fa-github"></i>
+              </a>
+            </div>
+
+            <div class="prj-tab-item">
+              <h3 class="prj-title">Implemention of Blockchain in Cross-Border Transactions</h3>
+              <ul class="prj-description-content">
+                <li>Investigated the potential of blockchain technology to
+                improve efficiency and reduce the risk associated with international
+                transactions</li>
+                <ul>
+                  <li>Surveyed the current inefficiencies and redundancies of the
+                  international payment system</li>
+                  <li>Analyzed the strengths and weaknesses of 3 existing models
+                  that adopted blockchain technnology into financial systems</li>
+                  <li>Devised a method of implementation that maximized speed,
+                  affordability, and security</li>
+                </ul>
+                <li>Summarized findings in a formal 4,000-word research paper</li>
+              </ul>
+
+              <a class="social-list-link prj-github"
+              href="img/EE Full Draft-Alena Zhang.pdf" target="_blank">
+              <i class="fas fa-file-alt"></i>
+            </a>
+            </div>
+
+          </div>
+        </div>
+        <h2 id="prj-title" class="hideme section-title section-title-projects">Projects</h2>
+
+      </section>
+
+      <!-- Activities -->
+      <section class="my-activities" id="activities">
+        <h2 id="activity-title" class="hideme section-title section-title-activities">Activities</h2>
+
+        <div class="act-grid">
+          <div class="hideme act-item">
+              <p class="act-title">Duke SPIRE Fellow</strong></p>
+              <ul class="act-description">
+                <li>Selected as 1 of 20 students in Duke's class of 2024 to participate
+                in a mentoring and academic support system for high-achieving students with an interest
+              in pursing a career in STEM</li>
+                <li>Participated in various networking events, community building activities,
+                and academic skills development opportunities</li>
+              <ul>
+          </div>
+
+          <div class="hideme act-item">
+            <div class="act-item-content">
+              <p class="act-title">Duke DTech</p>
+              <ul class="act-description">
+                <li>Joined a leadership development program for high-potential women
+                  pursuing technical careers at Duke</li>
+                <li>Engaged in technical skill development, mentoring activities,
+                  and networking opportunities with tech companies twice a week</li>
+              <ul>
+            </div>
+          </div>
+
+          <div class="hideme act-item">
+            <div class="act-item-content">
+              <p class="act-title">Duke Business Oriented Women</p>
+              <ul class="act-description">
+                <li>Selected through a competitive application process to join Duke's
+                premier women's pre-professional organization</li>
+                <li>Attended weekly skill-building workshops, general body meetings, and guest
+                speaker events with industry professionals</li>
+              <ul>
+            </div>
+          </div>
+
+          <div class="hideme act-item">
+            <div class="act-item-content">
+              <p class="act-title">Duke Women in Tech</p>
+              <ul class="act-description">
+                <li>Joined an organization focused on supporting women in computing</li>
+                <li>Participated in various alumni networking events and
+                  big/little mentorship programs</li>
+              <ul>
+            </div>
+          </div>
+
+          <div class="hideme act-item">
+            <div class="act-item-content">
+              <p class="act-title">DECA Business Club Competitor</p>
+              <ul class="act-description">
+                <li>Designed and presented a 20-page International Business Plan
+                  centered around launching a pollution-reducing car engine filter
+                  in China</li>
+                <li>Evaluated the revenue streams, key metrics, and detailed
+                  financials of the business</li>
+                <li><strong>Awards: </strong>Top 16 International Finalist</li>
+              <ul>
+            </div>
+          </div>
+
+          <div class="hideme act-item">
+            <div class="act-item-content">
+              <p class="act-title">Marching Band Flutist + Section Leader</p>
+              <ul class="act-description">
+                <li>Dedicated around 15 hours per week to marching band practice
+                  and competitions</li>
+                <li>Mentored around 20 incoming freshmen on the basics of marching</li>
+                <li>Organized monthly section activities and social events involving
+                   more than 40 people</li>
+                <li><strong>Awards: </strong>All-Region Band, All-Region Orchestra</li>
+              <ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer id="footer" class="footer">
+        <h3 id="footer-title" class="hideme footer-title">Feel free to reach out!</h3>
+
+        <a href="mailto:alena.zhang@duke.edu" class="hideme footer-link">alena.zhang@duke.edu</a>
+        <div id="footer-list">
+        <ul class="hideme social-list">
+          <li class="social-list-item">
+            <a class="social-list-link"
+            href="https://www.linkedin.com/in/alena-zhang-4449b6198/" target="_blank">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+          <li class="social-list-item">
+            <a class="social-list-link"
+            href="https://www.facebook.com/alena.zhang.712/" target="_blank">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+          <li class="social-list-item">
+            <a class="social-list-link"
+            href="https://github.com/alenazhangg" target="_blank">
+            <i class="fab fa-github"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      </footer>
+
+      <script type="text/javascript" src="js/index.js"></script>
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+      <script>
+      $(window).on("load",function() {
+        $(window).scroll(function() {
+          var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+          $(".hideme").each(function() {
+            /* Check the location of each desired element */
+            var objectBottom = $(this).offset().top + ($(this).outerHeight()/2.5);
+
+            /* If the element is completely within bounds of the window, fade it in */
+            if (objectBottom < windowBottom) { //object comes into view (scrolling down)
+              if ($(this).css("opacity")==0) {$(this).animate({'opacity':'1'},600);}
+            }
+          });
+        }).scroll(); //invoke scroll-handler on page-load
+      });
+
+      </script>
+
+
+    </body>
+
+
+</html>
