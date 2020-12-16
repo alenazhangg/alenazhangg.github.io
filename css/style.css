@@ -326,7 +326,6 @@ header {
 }
 
 .programming-header,
-.skills-header,
 .cw-header,
 .fe-header{
   color: var(--clr-darker);
@@ -353,7 +352,7 @@ header {
 
 }
 
-.skills,.cw,.fe{
+.cw,.fe{
   list-style: circle;
 }
 
