@@ -562,6 +562,7 @@ header {
   justify-content: center;
   padding: 0 0.25em;
   font-family: var(--ff-fourth);
+  font-size: 1rem;
 }
 
 .prj-tab.selected{
@@ -611,13 +612,15 @@ header {
   text-align: left;
   grid-area: title;
   font-family: var(--ff-secondary);
+  font-size: 1.5rem;
+  margin: auto 0 ;
 }
 
 .prj-tab-item.selected{
   display: grid;
 }
 
-@media (max-width: 900px){
+@media (max-width: 960px){
   .prj-table{
     margin: 0em;
     width: 100%;
