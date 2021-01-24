@@ -177,6 +177,23 @@
                 to NASA scientists in a 30-minute presentation</li>
             </ul>
           </div>
+
+          <button type="button" class="hideme exp-collapsibleBtn">Duke Academic Resource Center</button>
+          <div class="exp-content">
+            <ul class="position-date-info">
+              <li class="position">Peer Tutor</li>
+              <li class="date">1/2021-Present</li>
+            </ul>
+            <ul class="work-description">
+              <li>Selected based on academic achievement and professor recommendation to
+              become a <span style="color: rgb(246,224,181)">Computer Science</span> tutor for the Data Structures and
+              Algorithms course</li>
+              <li>Hosted and prepared materials for 3 group tutorials, 90 minutes in length, each week</li>
+              <li>Attended orientation and professional development workshops to earn a
+              CRLA Tutor Certification</li>
+            </ul>
+          </div>
+
           <button type="button" class="hideme exp-collapsibleBtn">The Love of China School of Dance</button>
           <div class="exp-content">
             <ul class="position-date-info">
@@ -193,6 +210,7 @@
               <li>Taught and demonstrated simple dance moves and exercises to the class</li>
             </ul>
           </div>
+
           <button type="button" class="hideme exp-collapsibleBtn">Austin Chinese-American
           Network - SIW</button>
           <div class="exp-content">
@@ -210,25 +228,7 @@
                 materials were available </li>
             </ul>
           </div>
-          <button type="button" class="hideme exp-collapsibleBtn">Terrarium Apparel</button>
-          <div class="exp-content">
-            <ul class="position-date-info">
-              <li class="position">Co-Founder</li>
-              <li class="date">8/2019-5/2020</li>
-            </ul>
-            <ul class="work-description">
-              <li>Established an initiative to spread awareness on and raise
-              funds for marginalized endangered species</li>
-              <li>Designed T-shirts and hats showcasing endangered animals that
-                are often associated with a negative connotation in popular culture
-                in an effort to shed a more positive light on them</li>
-              <li>Sold apparel to our community and managed over $1500 in revenue after
-             2 weeks of sales</li>
-              <li>Donated around $750 in profit within the first 2 weeks to varied wildlife organizations
-                advocating for the conservation and preservation of the marginalized
-                endangered species</li>
-            </ul>
-          </div>
+
         </div>
       </section>
 
@@ -242,24 +242,27 @@
               <p>NASA SEES</p>
             </div>
             <div class="prj-tab" onclick="toggleSelected(1)">
-              <p>Huffman Coding</p>
+              <p>Forest Cover Classification</p>
             </div>
             <div class="prj-tab" onclick="toggleSelected(2)">
-              <p>Ravenous</p>
-            </div>
-            <div class="prj-tab" onclick="toggleSelected(3)">
-              <p>Percolation</p>
-            </div>
-            <div class="prj-tab" onclick="toggleSelected(4)">
-              <p>COVID-19 Data Analysis</p>
-            </div>
-            <div class="prj-tab" onclick="toggleSelected(5)">
-              <p>Due Calculator</p>
-            </div>
-            <div class="prj-tab" onclick="toggleSelected(6)">
               <p>Unit Converter</p>
             </div>
+            <div class="prj-tab" onclick="toggleSelected(3)">
+              <p>Ravenous</p>
+            </div>
+            <div class="prj-tab" onclick="toggleSelected(4)">
+              <p>Huffman Coding</p>
+            </div>
+            <div class="prj-tab" onclick="toggleSelected(5)">
+              <p>Percolation</p>
+            </div>
+            <div class="prj-tab" onclick="toggleSelected(6)">
+              <p>COVID-19 Data Analysis</p>
+            </div>
             <div class="prj-tab" onclick="toggleSelected(7)">
+              <p>Due Calculator</p>
+            </div>
+            <div class="prj-tab" onclick="toggleSelected(8)">
               <p>Blockchain Research</p>
             </div>
           </div>
@@ -292,25 +295,43 @@
             </div>
 
             <div class="prj-tab-item">
-              <h3 class="prj-title">Data Structures and Algorithms Class Project</h3>
+              <h3 class="prj-title">Deep Learning Model</h3>
               <ul class="prj-description-content">
-                <li>Programmed in <span style="color: rgb(246,224,181)">Java</span>
-                   with a partner to implement Huffman coding algorithms
-                  for the compression and decompression of text and image files</li>
-                <ul>
-                  <li>Determined encodings for each byte of input data by creating
-                  a Huffman tree based on the frequency of each byte</li>
-                  <li>Compressed the files by writing the corresponding encoding
-                    for each byte and adding the Huffman tree at the beginning of
-                    the compressed file</li>
-                  <li>Decompressed files based on the encodings stored in Huffman
-                    tree</li>
-                </ul>
+                <li>Programmed in <span style="color: rgb(246,224,181)">Python</span>
+                using the <span style="color: rgb(246,224,181)">TensorFlow</span> library
+                to develop a model to predict forest cover type based on cartographic
+                variables (such as soil type and elevation)</li>
+                <ul><li>Used data taken from 30x30 meter cells in the Roosevelt
+                  National Forest</li></ul>
+                <li>Designed the model architecture by adding hidden layers and
+                  tuning hyperparameters</li>
+                <li>Evaluated the model by plotting the accurary and loss metrics,
+                 generating a classification report, and plotting a heatmap</li>
+                <li>Obtained an accuracy of around 88% and a loss of around 30% after
+                  testing the model on validation data </li>
               </ul>
-
               <a class="social-list-link prj-github"
-              href="https://coursework.cs.duke.edu/yuanyuan.lin/p7-huffman-fall20" target="_blank">
-              <i class="fab fa-gitlab"></i>
+              href="https://github.com/alenazhangg/forest-cover-classification" target="_blank">
+              <i class="fab fa-github"></i>
+              </a>
+            </div>
+
+            <div class="prj-tab-item">
+              <h3 class="prj-title">Native Mobile App</h3>
+              <ul class="prj-description-content">
+                <li>Programmed in <span style="color: rgb(246,224,181)">Dart</span>
+                   to build a <span style="color: rgb(246,224,181)">Flutter</span> app
+                   compatible with iOS and Android that converts units in 8 categories</li>
+                <ul>
+                  <li><strong>Categories</strong>: length, area, volume, mass, time, digital storage,
+                   energy, and currency</li>
+                </ul>
+                <li>Designed an interactive user interface, created stateful widgets,
+                and retrieved API data with guidance from Udacity helper code</li>
+              </ul>
+              <a class="social-list-link prj-github"
+              href="https://github.com/alenazhangg/unit-converter" target="_blank">
+              <i class="fab fa-github"></i>
               </a>
             </div>
 
@@ -337,6 +358,30 @@
               <i class="fab fa-github"></i>
               </a>
             </div>
+
+            <div class="prj-tab-item">
+              <h3 class="prj-title">Data Structures and Algorithms Class Project</h3>
+              <ul class="prj-description-content">
+                <li>Programmed in <span style="color: rgb(246,224,181)">Java</span>
+                   with a partner to implement Huffman coding algorithms
+                  for the compression and decompression of text and image files</li>
+                <ul>
+                  <li>Determined encodings for each byte of input data by creating
+                  a Huffman tree based on the frequency of each byte</li>
+                  <li>Compressed the files by writing the corresponding encoding
+                    for each byte and adding the Huffman tree at the beginning of
+                    the compressed file</li>
+                  <li>Decompressed files based on the encodings stored in Huffman
+                    tree</li>
+                </ul>
+              </ul>
+
+              <a class="social-list-link prj-github"
+              href="https://coursework.cs.duke.edu/yuanyuan.lin/p7-huffman-fall20" target="_blank">
+              <i class="fab fa-gitlab"></i>
+              </a>
+            </div>
+
 
             <div class="prj-tab-item">
               <h3 class="prj-title">Data Structures and Algorithms Class Project</h3>
@@ -409,24 +454,7 @@
               </a>
             </div>
 
-            <div class="prj-tab-item">
-              <h3 class="prj-title">Native Mobile App</h3>
-              <ul class="prj-description-content">
-                <li>Programmed in <span style="color: rgb(246,224,181)">Dart</span>
-                   to build a <span style="color: rgb(246,224,181)">Flutter</span> app
-                   compatible with iOS and Android that converts units in 8 categories</li>
-                <ul>
-                  <li><strong>Categories</strong>: length, area, volume, mass, time, digital storage,
-                   energy, and currency</li>
-                </ul>
-                <li>Designed an interactive user interface, created stateful widgets,
-                and retrieved API data with guidance from Udacity helper code</li>
-              </ul>
-              <a class="social-list-link prj-github"
-              href="https://github.com/alenazhangg/unit-converter" target="_blank">
-              <i class="fab fa-github"></i>
-              </a>
-            </div>
+
 
             <div class="prj-tab-item">
               <h3 class="prj-title">Implemention of Blockchain in Cross-Border Transactions</h3>
@@ -475,12 +503,16 @@
 
           <div class="hideme act-item">
             <div class="act-item-content">
-              <p class="act-title">Duke DTech</p>
+              <p class="act-title">Duke Women in Tech</p>
               <ul class="act-description">
-                <li>Joined a leadership development program for high-potential women
-                  pursuing technical careers at Duke</li>
-                <li>Engaged in technical skill development, mentoring activities,
-                  and networking opportunities with tech companies twice a week</li>
+                <li>Joined an organization focused on supporting women in computing</li>
+                <li><span style="color: rgb(246,224,181)"><strong><em>Publicity Chair:
+                </em></strong></span></li>
+                <ul>
+                  <li>Created and sent weekly tech newsletters about professional development opportunities
+                   inside and outside of Duke to over 150 club members</li>
+                  <li>Promoted club events on Facebook, Instagram, Slack, and the club website</li>
+                </ul>
               <ul>
             </div>
           </div>
@@ -499,40 +531,45 @@
 
           <div class="hideme act-item">
             <div class="act-item-content">
-              <p class="act-title">Duke Women in Tech</p>
+              <p class="act-title">Duke DTech</p>
               <ul class="act-description">
-                <li>Joined an organization focused on supporting women in computing</li>
-                <li>Participated in various alumni networking events and
-                  big/little mentorship programs</li>
+                <li>Joined a leadership development program for high-potential women
+                  pursuing technical careers at Duke</li>
+                <li>Engaged in technical skill development, mentoring activities,
+                  and networking opportunities with tech companies twice a week</li>
               <ul>
             </div>
           </div>
 
           <div class="hideme act-item">
             <div class="act-item-content">
-              <p class="act-title">DECA Business Club Competitor</p>
+              <p class="act-title">HS DECA Business Club Competitor</p>
               <ul class="act-description">
                 <li>Designed and presented a 20-page International Business Plan
                   centered around launching a pollution-reducing car engine filter
                   in China</li>
                 <li>Evaluated the revenue streams, key metrics, and detailed
                   financials of the business</li>
-                <li><strong>Awards: </strong>Top 16 International Finalist</li>
+                <li><span style="color: rgb(246,224,181)"><em><strong>Awards:
+                </strong></em></span>Top 16 International Finalist</li>
               <ul>
             </div>
           </div>
 
           <div class="hideme act-item">
             <div class="act-item-content">
-              <p class="act-title">Marching Band Flutist + Section Leader</p>
+              <p class="act-title">HS Marching Band Flutist</p>
               <ul class="act-description">
-                <li>Dedicated 15 hours per week to marching band practice
-                  and competitions</li>
-                <li>Mentored around 20 incoming freshmen on the basics of marching</li>
-                <li>Organized monthly section activities and social events involving
-                   more than 40 people</li>
-                <li><strong>Awards: </strong>All-Region Band, All-Region Orchestra</li>
-              <ul>
+                <li>Dedicated 15 hours per week to marching band practice and competitions</li>
+                <li><span style="color: rgb(246,224,181)"><strong><em>Section Leader:
+                </em></strong></span></li>
+                <ul>
+                  <li>Mentored around 20 incoming freshmen on the basics of marching</li>
+                  <li>Organized monthly section activities and social events involving more than 40 people</li>
+                </ul>
+                <li><span style="color: rgb(246,224,181)"><em><strong>Awards:
+                </strong></em></span>All-Region Band, All-Region Orchestra</li>
+              </ul>
             </div>
           </div>
         </div>
